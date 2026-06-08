@@ -66,3 +66,26 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header, main {
+        padding: 15px;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    form {
+        padding: 0 10px;
+    }
+}
