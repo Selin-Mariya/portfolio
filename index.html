@@ -1,34 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Personal Portfolio Website">
-    <meta name="keywords" content="Portfolio, Web Developer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Selin Mariya</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.svg">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Your Name</title>
+    <meta name="description" content="Professional portfolio showcasing projects, skills, and contact." />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="logo" href="#hero">YourName</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn icon-btn" aria-label="Toggle theme">🌙</button>
+                <button id="menu-toggle" class="btn hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<header>
-    <h1>Selin Mariya</h1>
+    <main id="main">
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1 class="hero-title">Hi, I'm Your Name — Frontend Developer & Designer</h1>
+                    <p class="hero-sub">I craft beautiful, accessible, and performant web experiences using modern CSS and JavaScript.</p>
+                    <div class="hero-ctas">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn ghost" href="#contact">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="profile-card glass">
+                        <img src="images/profile.jpg" alt="Your Name" class="profile-img" />
+                        <div class="profile-info">
+                            <h3>Your Name</h3>
+                            <p>UI/UX Designer & Frontend Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <nav aria-label="Main Navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <section id="about" class="about container">
+            <h2 class="section-title">About</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I build scalable front-end architectures and visual systems focused on accessibility, performance and delightful interactions. I enjoy turning complex problems into simple, beautiful interfaces.</p>
+                    <p>I'm experienced with modern CSS layout systems, component-driven design, and animation techniques that enhance UX.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat glass">
+                        <strong>5+</strong>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat glass">
+                        <strong>50+</strong>
+                        <span>Projects Delivered</span>
+                    </div>
+                    <div class="stat glass">
+                        <strong>Open</strong>
+                        <span>To Work</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<main>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <article class="skill-card glass">
+                        <div class="skill-icon">💻</div>
+                        <h3>HTML5</h3>
+                        <p>Semantic markup and accessibility-first structure.</p>
+                    </article>
+                    <article class="skill-card glass">
+                        <div class="skill-icon">🎨</div>
+                        <h3>CSS3</h3>
+                        <p>Grid, Flexbox, animations, and design systems.</p>
+                    </article>
+                    <article class="skill-card glass">
+                        <div class="skill-icon">⚛️</div>
+                        <h3>JavaScript</h3>
+                        <p>Modern ESNext, tooling, and performance patterns.</p>
+                    </article>
+                    <article class="skill-card glass">
+                        <div class="skill-icon">🧩</div>
+                        <h3>Design</h3>
+                        <p>Prototyping, typography, and user flows.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<section>
-    <h2>Welcome</h2>
+        <section id="projects" class="projects container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card glass">
+                    <img src="images/project1.jpg" alt="Project 1" class="project-img" />
+                    <div class="project-body">
+                        <h3>Project One</h3>
+                        <p>Interactive UI built with focus on animation and performance.</p>
+                        <div class="project-actions">
+                            <a class="btn small" href="#">Live</a>
+                            <a class="btn small ghost" href="#">Code</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass">
+                    <img src="images/project2.jpg" alt="Project 2" class="project-img" />
+                    <div class="project-body">
+                        <h3>Project Two</h3>
+                        <p>Component library and design system for scalable apps.</p>
+                        <div class="project-actions">
+                            <a class="btn small" href="#">Live</a>
+                            <a class="btn small ghost" href="#">Code</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass">
+                    <img src="images/project3.jpg" alt="Project 3" class="project-img" />
+                    <div class="project-body">
+                        <h3>Project Three</h3>
+                        <p>Performance-first landing page with animation microinteractions.</p>
+                        <div class="project-actions">
+                            <a class="btn small" href="#">Live</a>
+                            <a class="btn small ghost" href="#">Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
+        <section id="education" class="education container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="edu-item glass">
+                    <h3>B.S. Computer Science</h3>
+                    <p>University Name — 2016-2020</p>
+                </div>
+                <div class="edu-item glass">
+                    <h3>UX Design Course</h3>
+                    <p>Design Institute — 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-grid">
+                    <form id="contact-form" class="contact-form glass" novalidate>
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" required autocomplete="name" />
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required autocomplete="email" />
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn primary">Send Message</button>
+                            <div id="form-feedback" role="status" aria-live="polite"></div>
+                        </div>
+                    </form>
+                    <div class="contact-info glass">
+                        <h3>Let's build something together</h3>
+                        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+                        <p>Location: City, Country</p>
+                        <div class="socials">
+                            <a href="#" aria-label="GitHub">GitHub</a>
+                            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="#hero">YourName</a>
+                <p class="muted">© <span id="year"></span> Your Name. All rights reserved.</p>
+            </div>
+            <nav aria-label="Footer navigation">
+                <ul class="footer-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
         <img src="images/profile.svg"
             alt="Profile picture of Selin Mariya"
             width="200">
